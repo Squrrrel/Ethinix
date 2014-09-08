@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethinix</title>
+    <link rel="stylesheet" href="fonts/quicksand/quicksand.css">
+	<link rel="stylesheet" href="fonts/roboto/roboto.css">
+	<link rel="stylesheet" href="css/main.css"> <!-- Importing the main stylesheet -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+	<script src="scripts/menu-button.js"></script>
+  </head>
+  <body>
+    <div id="site-wrapper">
+	<div id="title-bar"><center>
+	<h1 id="title-bar-heading">ETHINIX</h1></center>
+		<div id="menu-button-open">
+			<input type="image" src="icons/png/list26.png" id="toggle-menu"/>
+		</div>
+		<div id="menu-button-close">
+			<input type="image" src="icons/png/list26.png" id="toggle-menu"/>
+		</div>
+	</div>
+	<div id="side-bar" class="animated">
+      <button id="home" onClick="code()">CODE</button>
+      <button id="league" onClick="league()">LEAGUE OF LEGENDS</button>
+	  <button id="music" onClick="spotify()">MUSIC</button>
+	  <div id="side-bar-info">
+	  <center><p id="time"></p></center>
+	  <center><p id="date"></p></center>
+	  <center><p id="info"></p></center>  
+		</div>
+	</div>
+      <div id="main-content">
+			<div id="class_code" height="33.33%">
+				<h1 id="class_code-header">Code</h1>
+				<div id="class_code-content">
+				</div>
+			</div>
+			<div id="class_league" height="33.33%">
+				<h1 id="class_league-header">League of Legends</h1>
+				<div id="class_league-content">
+				</div>
+			</div>
+			<div id="class_music" height="33.33%">
+				<h1 id="class_music-heading">Music</h1>
+				<div id="class_music-content">
+				</div>
+			</div>
+			<div id="page_code">
+					<center><h1 id="page_code-heading" style="color: #009fee; font-family: Roboto-thin; font-size: 3.2em">CODE</h1></center>
+						<input type="button" id="code-back_to_home" value="HOME" />
+							<div id="page_code-content" style="position: relative;">
+							
+						<center><p id="download-source-code-text">Want to download the code for this website?</p></center>
+						<center><div id="download-source-code">
+							<div id="dsc-p">
+								<p>Download Source Code</p>
+							</div>
+							<p id="file-size">File Size: 61.3MB</p>
+							<p id="download-site">Download Site: Github</p>
+						</div></center>
+						<center><p id="view-on-github-text">View Website on Github?</p>
+						<center><div id="view-on-github">
+							<div id="vog-p">
+								<p>View Website on Github</p>
+							</div>
+							<p id="URL">URL: https://www.Squrrrel.Github.io/Ethinix</p>
+						</div></center>
+				</div>	
+			</div>
+			<div id="page_league">
+				<div id="page_league-content" style="position: relative;">
+				<div id="flash-background-league">
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+					<param name="movie" value="flash/gn-gnar.swf" />
+					<param name="quality" value="high" />
+					<param name="wmode" value="transparent">
+					<embed src="http://oce.leagueoflegends.com/sites/default/files/upload/backgrounds/animated/bg-gnar.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+					</div>
+					<h1 id="page_league_heading" style="position: absolute; color: #ff9c00; font-family: Quicksand-Light; font-size: 4em; left: 3.7vh; -webkit-transform: translateX(-3.7vh); top: 3vh; -webkit-transform: translateY(3vh);">LEAGUE OF LEGENDS</h1>
+					<input type="button" id="league-back_to_home" value="HOME" />
+					<p id="gnar" style="color: #ff9c00; font-size: 2.8em; line-height: 1em;">Gnar, the missing link</p>
+					<p id="gnar_desc">Armed with a boomerang and boulder, and with his temper teetering on the brink, Gnar has made his way to the Rift.</p>
+					
+					<embed id="youtube-video"src="https://www.youtube.com/v/4Qu3rhWGq0s">
+					
+					<div id="choose_your_champion-heading">
+						<p>Choose your champion</p>
+					</div>
+					<div id="league-champions">
+						<div id="aatrox" onClick="direct('aatrox')"><img src="images/champions/aatrox.png" /></div>
+						<div id="ahri"onClick="direct('ahri')"><img src="images/champions/ahri.png" /></div>
+						<div id="akali"onClick="direct('akali')"><img src="images/champions/akali.png" /></div>
+						<div id="alistar" onClick="direct('alistar')"><img src="images/champions/alistar.png" /></div>
+						<div id="amumu" onClick="direct('amumu')"><img src="images/champions/amumu.png" /></div>
+						<div id="anivia" onClick="direct('anivia')"><img src="images/champions/anivia.png" /></div>
+						<div id="annie" onClick="direct('annie')"><img src="images/champions/annie.png" /></div>
+						<div id="ashe" onClick="direct('ashe')"><img src="images/champions/ashe.png" /></div>
+						<div id="blitzcrank" onClick="direct('blitzcrank')"><img src="images/champions/blitzcrank.png" /></div>
+						<div id="brand" onClick="direct('brand')"><img src="images/champions/brand.png" /></div>
+						<div id="braum" onClick="direct('braum')"><img src="images/champions/braum.png" /></div>
+						<div id="caitlyn" onClick="direct('caitlyn')"><img src="images/champions/caitlyn.png" /></div>
+						<div id="cassiopeia" onClick="direct('cassiopeia')"><img src="images/champions/cassiopeia.png" /></div>
+						<div id="chogath" onClick="direct('chogath')"><img src="images/champions/chogath.png" /></div>
+						<div id="corki" onClick="direct('corki')"><img src="images/champions/corki.png" /></div>
+						<div id="darius" onClick="direct('darius')"><img src="images/champions/darius.png" /></div>
+						<div id="diana" onClick="direct('diana')"><img src="images/champions/diana.png" /></div>
+						<div id="drmundo" onClick="direct('drmundo')"><img src="images/champions/drmundo.png" /></div>
+						<div id="draven" onClick="direct('draven')"><img src="images/champions/draven.png" /></div>
+						<div id="elise" onClick="direct('elise')"><img src="images/champions/elise.png" /></div>
+						<div id="evelynn" onClick="direct('evelynn')"><img src="images/champions/evelynn.png" /></div>
+						<div id="ezreal" onClick="direct('ezreal')"><img src="images/champions/ezreal.png" /></div>
+						<div id="fiddlesticks" onClick="direct('fiddlesticks')"><img src="images/champions/fiddlesticks.png" /></div>
+						<div id="fiora" onClick="direct('fiora')"><img src="images/champions/fiora.png" /></div>
+						<div id="fizz" onClick="direct('fizz')"><img src="images/champions/fizz.png" /></div>
+						<div id="galio" onClick="direct('galio')"><img src="images/champions/galio.png" /></div>
+						<div id="gangplank" onClick="direct('gangplank')"><img src="images/champions/gangplank.png" /></div>
+						<div id="garen" onClick="direct('garen')"><img src="images/champions/garen.png" /></div>
+						<div id="gnar_champ" onClick="direct('gnar')"><img src="images/champions/gnar.png" /></div>
+						<div id="gragas" onClick="direct('gragas')"><img src="images/champions/gragas.png" /></div>
+						<div id="graves" onClick="direct('graves')"><img src="images/champions/graves.png" /></div>
+						<div id="hecarim" onClick="direct('hecarim')"><img src="images/champions/hecarim.png" /></div>
+						<div id="heimerdinger" onClick="direct('heimerdinger')"><img src="images/champions/heimerdinger.png" /></div>
+						<div id="irelia" onClick="direct('irelia')"><img src="images/champions/irelia.png" /></div>
+						<div id="janna" onClick="direct('janna')"><img src="images/champions/janna.png" /></div>
+						<div id="jarvaniv" onClick="direct('jarviniv')"><img src="images/champions/jarvaniv.png" /></div>
+						<div id="jax" onClick="direct('jax')"><img src="images/champions/jax.png" /></div>
+						<div id="jayce" onClick="direct('jayce')"><img src="images/champions/jayce.png" /></div>
+						<div id="jinx" onClick="direct('jinx')"><img src="images/champions/jinx.png" /></div>
+						<div id="karma" onClick="direct('karma')"><img src="images/champions/karma.png" /></div>
+						<div id="karthus" onClick="direct('karthus')"><img src="images/champions/karthus.png" /></div>
+						<div id="kassadom" onClick="direct('kassadin')"><img src="images/champions/kassadin.png" /></div>
+						<div id="katarina" onClick="direct('katarina')"><img src="images/champions/katarina.png" /></div>
+						<div id="kayle" onClick="direct('kayle')"><img src="images/champions/kayle.png" /></div>
+						<div id="kennen" onClick="direct('kennen')"><img src="images/champions/kennen.png" /></div>
+						<div id="khazix" onClick="direct('khazix')"><img src="images/champions/khazix.png" /></div>
+						<div id="kogmaw" onClick="direct('kogmaw')"><img src="images/champions/kogmaw.png" /></div>
+						<div id="leblanc" onClick="direct('leblanc')"><img src="images/champions/leblanc.png" /></div>
+						<div id="leesin" onClick="direct('leesin')"><img src="images/champions/leesin.png" /></div>
+						<div id="leona" onClick="direct('leona')"><img src="images/champions/leona.png" /></div>
+						<div id="lissandra" onClick="direct('lissandra')"><img src="images/champions/lissandra.png" /></div>
+						<div id="lucian" onClick="direct('lucian')"><img src="images/champions/lucian.png" /></div>
+						<div id="lulu" onClick="direct('lulu')"><img src="images/champions/lulu.png" /></div>
+						<div id="lux" onClick="direct('lux')"><img src="images/champions/lux.png" /></div>
+						<div id="malphite" onClick="direct('malphite')"><img src="images/champions/malphite.png" /></div>
+						<div id="malzahar" onClick="direct('malzahar')"><img src="images/champions/malzahar.png" /></div>
+						<div id="maokai" onClick="direct('maokai')"><img src="images/champions/maokai.png" /></div>
+						<div id="masteryi" onClick="direct('masteryi')"><img src="images/champions/masteryi.png" /></div>
+						<div id="missfortune" onClick="direct('missfortune')"><img src="images/champions/missfortune.png" /></div>
+						<div id="mordekaiser" onClick="direct('mordekaiser')"><img src="images/champions/mordekaiser.png" /></div>
+						<div id="morgana" onClick="direct('morgana')"><img src="images/champions/morgana.png" /></div>
+						<div id="nami" onClick="direct('nami')"><img src="images/champions/nami.png" /></div>
+						<div id="nasus" onClick="direct('nasus')"><img src="images/champions/nasus.png" /></div>
+						<div id="nautilus" onClick="direct('nautilus')"><img src="images/champions/nautilus.png" /></div>
+						<div id="nidalee" onClick="direct('nidalee')"><img src="images/champions/nidalee.png" /></div>
+						<div id="nocturne" onClick="direct('nocturne')"><img src="images/champions/nocturne.png" /></div>
+						<div id="nunu" onClick="direct('nunu')"><img src="images/champions/nunu.png" /></div>
+						<div id="olaf" onClick="direct('olaf')"><img src="images/champions/olaf.png" /></div>
+						<div id="orianna" onClick="direct('orianna')"><img src="images/champions/orianna.png" /></div>
+						<div id="pantheon" onClick="direct('pantheon')"><img src="images/champions/pantheon.png" /></div>
+						<div id="poppy" onClick="direct('poppy')"><img src="images/champions/poppy.png" /></div>
+						<div id="quinn" onClick="direct('quinn')"><img src="images/champions/quinn.png" /></div>
+						<div id="rammus" onClick="direct('rammus')"><img src="images/champions/rammus.png" /></div>
+						<div id="renekton" onClick="direct('renekton')"><img src="images/champions/renekton.png" /></div>
+						<div id="rengar" onClick="direct('rengar')"><img src="images/champions/rengar.png" /></div>
+						<div id="riven" onClick="direct('riven')"><img src="images/champions/riven.png" /></div>
+						<div id="rumble" onClick="direct('rumble')"><img src="images/champions/rumble.png" /></div>
+						<div id="ryze" onClick="direct('ryze')"><img src="images/champions/ryze.png" /></div>
+						<div id="sejuani" onClick="direct('sejuani')"><img src="images/champions/sejuani.png" /></div>
+						<div id="shaco" onClick="direct('shaco')"><img src="images/champions/shaco.png" /></div>
+						<div id="shen" onClick="direct('shen')"><img src="images/champions/shen.png" /></div>
+						<div id="shyvana" onClick="direct('shyvana')"><img src="images/champions/shyvana.png" /></div>
+						<div id="singed" onClick="direct('singed')"><img src="images/champions/singed.png" /></div>
+						<div id="sion" onClick="direct('sion')"><img src="images/champions/sion.png" /></div>
+						<div id="sivir" onClick="direct('sivir')"><img src="images/champions/sivir.png" /></div>
+						<div id="skarner" onClick="direct('skarner')"><img src="images/champions/skarner.png" /></div>
+						<div id="sona" onClick="direct('sona')"><img src="images/champions/sona.png" /></div>
+						<div id="soraka" onClick="direct('soraka')"><img src="images/champions/soraka.png" /></div>
+						<div id="swain" onClick="direct('swain')"><img src="images/champions/swain.png" /></div>
+						<div id="syndra" onClick="direct('syndra')"><img src="images/champions/syndra.png" /></div>
+						<div id="talon" onClick="direct('talon')"><img src="images/champions/talon.png" /></div>
+						<div id="taric" onClick="direct('taric')"><img src="images/champions/taric.png" /></div>
+						<div id="teemo" onClick="direct('teemo')"><img src="images/champions/teemo.png" /></div>
+						<div id="thresh" onClick="direct('thresh')"><img src="images/champions/thresh.png" /></div>
+						<div id="tristana" onClick="direct('tristana')"><img src="images/champions/tristana.png" /></div>
+						<div id="trundle" onClick="direct('trundle')"><img src="images/champions/trundle.png" /></div>
+						<div id="tryndamere" onClick="direct('tryndamere')"><img src="images/champions/tryndamere.png" /></div>
+						<div id="twistedfate" onClick="direct('twistedfate')"><img src="images/champions/twistedfate.png" /></div>
+						<div id="twitch" onClick="direct('twitch')"><img src="images/champions/twitch.png" /></div>
+						<div id="udyr" onClick="direct('udyr')"><img src="images/champions/udyr.png" /></div>
+						<div id="urgot" onClick="direct('urgot')"><img src="images/champions/urgot.png" /></div>
+						<div id="varus" onClick="direct('varus')"><img src="images/champions/varus.png" /></div>
+						<div id="vayne" onClick="direct('vayne')"><img src="images/champions/vayne.png" /></div>
+						<div id="veigar" onClick="direct('veigar')"><img src="images/champions/veigar.png" /></div>
+						<div id="velkoz" onClick="direct('velkoz')"><img src="images/champions/velkoz.png" /></div>
+						<div id="vi" onClick="direct('vi')"><img src="images/champions/vi.png" /></div>
+						<div id="viktor" onClick="direct('viktor')"><img src="images/champions/viktor.png" /></div>
+						<div id="vladimir" onClick="direct('vladimir')"><img src="images/champions/vladimir.png" /></div>
+						<div id="volibear" onClick="direct('volibear')"><img src="images/champions/volibear.png" /></div>
+						<div id="warwick" onClick="direct('warwick')"><img src="images/champions/warwick.png" /></div>
+						<div id="wukong" onClick="direct('wukong')"><img src="images/champions/wukong.png" /></div>
+						<div id="xerath" onClick="direct('xerath')"><img src="images/champions/xerath.png" /></div>
+						<div id="xinzhao" onClick="direct('xinzhao')"><img src="images/champions/xinzhao.png" /></div>
+						<div id="yasuo" onClick="direct('yasuo')"><img src="images/champions/yasuo.png" /></div>
+						<div id="yorick" onClick="direct('yorick')"><img src="images/champions/yorick.png" /></div>
+						<div id="zac" onClick="direct('zac')"><img src="images/champions/zac.png" /></div>
+						<div id="zed" onClick="direct('zed')"><img src="images/champions/zed.png" /></div>
+						<div id="ziggs" onClick="direct('ziggs')"><img src="images/champions/ziggs.png" /></div>
+						<div id="zilean" onClick="direct('zilean')"><img src="images/champions/zilean.png" /></div>
+						<div id="zyra" onClick="direct('zyra')"><img src="images/champions/zyra.png" /></div>
+					</div>
+				</div>
+			</div>
+			<div id="page_music">
+				<div id="page_music-content" style="position: relative;" >
+					<h1 id="page_music-heading">MUSIC</h1>
+						<input type="button" id="music-back_to_home" value="HOME" />
+				</div>
+			</div>
+      </div>
+    </div>
+	<script>
+		$('#page_code').css('left', "-100%");
+		$('#page_league').css('left', "-100%");
+		$('#page_code').css('left', "-100%");
+		var menuOpened = "false";
+		$(document).ready(function() {
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
+		});
+		$('#menu-button-open').click(function() {
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "0");
+		$('#menu-button-open').hide();
+		$('#menu-button-close').show();
+		});
+		$("#menu-button-close").click(function() {
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
+		});
+		$('#class_music').click(function() {
+		$('#page_music').css('left', "0%");
+		$('#page_music').css('max-width', "100%");
+		$('#page_music').css('opacity', "1");
+		$('#page_music').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_music').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		});
+		$('#class_code').click(function() {
+		$('#page_code').css('left', "0%");
+		$('#page_code').css('max-width', "100%");
+		$('#page_code').css('opacity', "1");
+		$('#page_code').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_music').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		});
+		$('#class_league').click(function() {
+		$('#page_league').css('left', "0%");
+		$('#page_league').css('max-width', "100%");
+		$('#page_league').css('opacity', "1");
+		$('#page_league').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_music').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		});
+		$('#music-back_to_home').click(function() {
+			$('#page_music').css('left', "-100%");
+			$('#menu-button-open').css('left', "0.6vh");
+			$('#menu-button-close').css('left', "0.6vh");
+		});
+		$('#code-back_to_home').click(function() {
+			$('#page_code').css('left', "-100%");
+			$('#menu-button-open').css('left', "0.6vh");
+			$('#menu-button-close').css('left', "0.6vh");
+		});
+		$('#league-back_to_home').click(function() {
+			$('#page_league').css('left', "-100%");
+			$('#menu-button-open').css('left', "0.6vh");
+			$('#menu-button-close').css('left', "0.6vh");
+		});
+		$('#download-source-code').mouseover(function() {
+			$('#dsc-p').css('vertical-align', "top");
+			$('#dsc-p').css('border-bottom', "solid white 1px");
+			$('#download-site').css('opacity', "1");
+			$('#file-size').css('opacity', "1");
+			$('#download-site').css('position', "relative");
+			$('#file-size').css('position', "relative");
+			$('#download-site').css('z-index', "0");
+			$('#file-size').css('z-index', "0");
+		});
+		$('#download-source-code').mouseleave(function() {
+			$('#dsc-p').css('vertical-align', "middle");
+			$('#dsc-p').css('border-bottom', "hidden");
+			$('#download-site').css('opacity', "0");
+			$('#file-size').css('opacity', "0");
+			$('#dsc-p').css('-webkit-transition', "position 1s ease-in-out");
+		});
+		$('#download-source-code').click(function() {
+			window.open('https://github.com/Squrrrel/Ethinix/archive/master.zip');
+		});
+		$('#view-on-github').mouseover(function() {
+			$('#vog-p').css('vertical-align', "top");
+			$('#vog-p').css('border-bottom', "solid white 1px");
+			$('#URL').css('opacity', "1");
+			$('#URL').css('position', "relative");
+			$('#URL').css('z-index', "0");
+		});
+		$('#view-on-github').mouseleave(function() {
+			$('#vog-p').css('vertical-align', "middle");
+			$('#vog-p').css('border-bottom', "hidden");
+			$('#URL').css('opacity', "0");
+			$('#URL').css('position', "relative");
+			$('#URL').css('z-index', "0");
+			$('#vog-p').css('-webkit-transition', "position 1s ease-in-out");
+		});
+		$('#view-on-github').click(function() {
+			window.open('https://Squrrrel.Github.io/Ethinix/');
+		});
+		$('#URL').css('opacity', "0");
+		
+		function direct(name) {
+			window.open("http://gameinfo.oce.leagueoflegends.com/en/game-info/champions/" + name);
+		}
+	</script>
+  </body>
+  <style>
+  * {
+	-webkit-transition: all 0.25s ease-in-out !important;
+	-moz-transition: all 0.25s ease-in-out !important;
+	-o-transition: all 0.25s ease-in-out !important;
+	transition: all 0.25s ease-in-out !important;
+  }
+	#menu-button-open, #menu-button-close {
+		background: url('icons/png/list26.png') no-repeat;
+		width: 32px;
+		height: 32px;
+		border: hidden;
+	}
+	#page_league input[type="button"] {
+	width: 15vh;
+	height: 5vh;
+	border: hidden;
+	background-color: #009fee;
+	color: white;
+	font-size: 1.8em;
+	font-family: Roboto-Thin;
+	top: -5vh;
+	right: 0;
+	left: 90vh;
+	-webkit-transform: translateX(-90vh);
+	position: relative !important;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	}
+	#page_code input[type="button"] {
+	width: 15vh;
+	height: 5vh;
+	border: hidden;
+	background-color: #009fee;
+	color: white;
+	font-size: 1.8em;
+	font-family: Roboto-Thin;
+	top: -10.7vh;
+	right: 0;
+	lefT: 90vh;
+	-webkit-transform: translateX(-90vh);
+	position: relative !important;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	}
+	 #page_music input[type="button"] {
+			width: 15vh;
+	height: 5vh;
+	border: hidden;
+	background-color: #009fee;
+	color: white;
+	font-size: 1.8em;
+	font-family: Roboto-Thin;
+	top: -8.2vh;
+	right: 0;
+	lefT: 90vh;
+	-webkit-transform: translateX(-90vh);
+	position: relative !important;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	 }
+	 #page_code input[type="button"]:hover {
+		background-color: #08f !important;
+	 }
+	 #page_league input[type="button"]:hover {
+		background-color: #08f !important;
+	 }
+	 #page_music input[type="button"]:hover {
+		background-color: #08f !important;
+	 }
+#download-source-code {
+	width: 30vh !important;
+	position: relative;
+	top: 3vh !important;
+	height: 3.7vh !important;
+	-webkit-transition: height 0.25s ease-in-out !important;
+	-moz-transition: height 0.25s ease-in-out !important;
+	-o-transition: height 0.25s ease-in-out !important;
+	transition: height 0.25s ease-in-out !important;
+	background-color: #009fee !important;
+	border: hidden;
+	font-size: 1.8em;
+	font-family: Roboto-Thin;
+	color: white;
+
+}
+#download-source-code:hover {
+	 height: 9.5vh !important;
+	 vertical-align: top;
+	 cursor: pointer;
+}
+#download-source-code p {
+     vertical-align: top;
+     text-align: center;
+     margin:0;
+}
+#download-source-code-text {
+	position: relative !important;
+	top: 1vh;
+	font-size: 1.6em;
+	-webkit-transition: all 0.25s ease-in-out !important;
+	-moz-transition: all 0.25s ease-in-out !important;
+	-o-transition: all 0.25s ease-in-out !important;
+	transition: all 0.25s ease-in-out !important;
+}
+#view-on-github-text {
+	position: relative !important;
+	top: 9vh;
+	font-size: 1.6em;
+}
+#view-on-github {
+	width: 30vh !important;
+	position: relative;
+	top: 11vh !important;
+	height: 3.5vh !important;
+	-webkit-transition: height 0.25s ease-in-out !important;
+	-moz-transition: height 0.25s ease-in-out !important;
+	-o-transition: height 0.25s ease-in-out !important;
+	transition: height 0.25s ease-in-out !important;
+	background-color: #009fee !important;
+	border: hidden;
+	font-size: 1.8em;
+	font-family: Roboto-Thin;
+	color: white;
+
+}
+#view-on-github:hover {
+	height: 5.8vh !important;
+	cursor: pointer;
+}
+#URL {
+	font-size: 0.68em;
+}
+#download-site, #file-size {
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out !important;
+}
+#page_code-content {
+	top: 25%;
+	-webkit-transform: translateY(-25%);
+}
+#gnar_desc {
+	font-size: 1.33333em;
+	color: white;
+	max-width: 63vh;
+	left: 1.9vh;
+	position: absolute;
+	top: 20vh;
+	-webkit-transform: translateY(20vh);
+	-webkit-transform: translateX(1.9vh);
+}
+#gnar {
+	position: absolute;
+	left: 3.7vh;
+	top: 7.6vh;
+	-webkit-transform: translateX(3.7vh);
+	-webkit-transform: translateY(7.6vh);
+}
+#youtube-video {
+	position: absolute;
+	left: 3.7vh;
+	top: 13vh;
+	-webkit-transform: translateX(3.7vh);
+	-webkit-transform: translateY(13vh);
+	width: 63vh;
+	height: 38vh;
+}
+img {
+	width: 40px;
+	height: 40px;
+}
+#league-champions {
+	top: 65.5vh;
+	-webkit-transform: translateY(65.5vh);
+	position: absolute !important;
+	left: 1.9vh !important;
+	-webkit-transform: translateX(1.9vh);
+	max-width: 500vh !important;
+	max-height: 75vh;
+	height: 27.5vh !important;
+	width: 183vh !important;
+	overflow: auto;
+	display: flex;
+	flex-direction: ltr;
+	flex-wrap: wrap;
+	border-top: solid #ff9c00 2.5px;
+}
+#league-champions div {
+	margin-left: 1vh;
+	padding-top: 1.5vh;
+	cursor: pointer;
+}
+#choose_your_champion-heading {
+	position: absolute !important;
+	left: 50%;
+	top: 60.3vh;
+	-webkit-transform: translateY(60.3vh);
+	-webkit-transform: translateX(-50%);
+	font-size: 2.8em;
+	color: #ff9c00;
+}
+</style>
+</html>
