@@ -108,7 +108,7 @@ border: none !important;
 	display: block;
 	vertical-align: middle;
 }
-#home, #league, #music {
+#home, #league, #sc2 {
 	top: 2.3em;
 	top: 0.5em;
 	position: relative;
@@ -167,7 +167,7 @@ border: none !important;
 	background-image: url('../images/banners/league-banner.jpg');
 	opacity: 1;
 }
-#class_music-content {
+#class_sc2-content {
 	color: white;
 	font-family: Roboto;
 	height: 33.7% !important;
@@ -178,23 +178,23 @@ border: none !important;
 	top: 66.3% !important;
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
-	background-image: url('../images/banners/music-banner.jpg');
-	background-size: 100% 100%;
-	background-position: right bottom;
+	background-image: url('../images/banners/sc2-banner.jpg');
+	background-size: 100% 200%;
+	background-position: center top;
 	transition: opacity 0.35s ease-in-out;
 	opacity: 0.2;
 	font-size: 4em;
 	bottom: 0;
 	z-index: 999;
 }
-#class_music-content:hover {
-	background-image: url('../images/banners/music-banner.jpg');
+#class_sc2-content:hover {
+	background-image: url('../images/banners/sc2-banner.jpg');
 	opacity: 1;
 }
-#class_code, #class_league, #class_music {
+#class_code, #class_league, #class_sc2 {
 	z-index: 99999;
 }
-#class_music-heading {
+#class_sc2-heading {
 	font-size: 4em;
 	font-family: Roboto-Thin;
 	z-index: 1;
@@ -205,7 +205,7 @@ border: none !important;
 	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
-	color: #a6e233;
+	color: #fff;
 	opacity: 1;
 	vertical-align: middle !important;
 }
@@ -241,7 +241,7 @@ border: none !important;
 	vertical-align: middle !important;
 	z-index: 2;
 }
-#class_music-header {
+#class_sc2-header {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -249,10 +249,10 @@ border: none !important;
 	z-index: 1;
 	font-family: Roboto;
 }
-#class_music:hover, #class_league:hover, #class_code:hover {
+#class_sc2:hover, #class_league:hover, #class_code:hover {
 	cursor: pointer;
 }
-#page_code, #page_league, #page_music {
+#page_code, #page_league, #page_sc2 {
 	width: 100%;
 	left: -100%;
 	position: absolute;
@@ -280,8 +280,10 @@ border: none !important;
 	z-index: -500;
 	opacity: 0;
 }
-#page_music {
-	background: white;
+#page_sc2 {
+	background: url('../images/backgrounds/sc2_background.jpg');
+	background-size: 100% 100%;
+	overflow: hidden;
 	height: 95vh;
 	z-index: -500;
 	opacity: 0;
@@ -380,7 +382,7 @@ input[type="image"] {
 		z-index: -500;
 		opacity: 0;
 	}
-	#page_music {
+	#page_sc2 {
 		height: 94.8vh;
 		z-index: -500;
 		opacity: 0;
@@ -442,8 +444,8 @@ input[type="image"] {
 	z-index: -500;
 	opacity: 0;
 }
-#page_music {
-	background: white;
+#page_sc2 {
+	background: #1d222c;
 	height: 94.6vh;
 	z-index: -500;
 	opacity: 0;

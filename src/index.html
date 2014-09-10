@@ -24,7 +24,7 @@
 	<div id="side-bar" class="animated">
       <button id="home" onClick="code()">CODE</button>
       <button id="league" onClick="league()">LEAGUE OF LEGENDS</button>
-	  <button id="music" onClick="spotify()">MUSIC</button>
+	  <button id="Starcraft" onClick="starcraft()">Starcraft</button>
 	  <div id="side-bar-info">
 	  <center><p id="time"></p></center>
 	  <center><p id="date"></p></center>
@@ -42,9 +42,9 @@
 				<div id="class_league-content">
 				</div>
 			</div>
-			<div id="class_music" height="33.33%">
-				<h1 id="class_music-heading">Music</h1>
-				<div id="class_music-content">
+			<div id="class_sc2" height="33.33%">
+				<h1 id="class_sc2-heading">Starcraft</h1>
+				<div id="class_sc2-content">
 				</div>
 			</div>
 			<div id="page_code">
@@ -213,10 +213,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="page_music">
-				<div id="page_music-content" style="position: relative;" >
-					<h1 id="page_music-heading">MUSIC</h1>
-						<input type="button" id="music-back_to_home" value="HOME" />
+			<div id="page_sc2">
+				<div id="page_sc2-content" style="position: relative;" >
+					<h1 id="page_sc2-heading">Starcraft</h1>
+						<input type="button" id="Starcraft-back_to_home" value="HOME" />
 				</div>
 			</div>
       </div>
@@ -242,14 +242,14 @@
 		$('#menu-button-open').show();
 		$('#menu-button-close').hide();
 		});
-		$('#class_music').click(function() {
-		$('#page_music').css('left', "0%");
-		$('#page_music').css('max-width', "100%");
-		$('#page_music').css('opacity', "1");
-		$('#page_music').css('z-index', "9999");
+		$('#class_sc2').click(function() {
+		$('#page_sc2').css('left', "0%");
+		$('#page_sc2').css('max-width', "100%");
+		$('#page_sc2').css('opacity', "1");
+		$('#page_sc2').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
@@ -260,7 +260,7 @@
 		$('#page_code').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
@@ -271,12 +271,12 @@
 		$('#page_league').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
-		$('#music-back_to_home').click(function() {
-			$('#page_music').css('left', "-100%");
+		$('#Starcraft-back_to_home').click(function() {
+			$('#page_sc2').css('left', "-100%");
 			$('#menu-button-open').css('left', "0.6vh");
 			$('#menu-button-close').css('left', "0.6vh");
 		});
@@ -386,7 +386,7 @@
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	}
-	 #page_music input[type="button"] {
+	 #page_sc2 input[type="button"] {
 			width: 15vh;
 	height: 5vh;
 	border: hidden;
@@ -411,7 +411,7 @@
 	 #page_league input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
-	 #page_music input[type="button"]:hover {
+	 #page_sc2 input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
 #download-source-code {

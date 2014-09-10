@@ -1,0 +1,8 @@
+- top gradient color: #0f98d8
+- bottom gradient color: #0177af	
+- background color: #1d222c
+- background selection/dot selector: #0c76af
+- outline color: #195e99
+- second-important text color: #3d312c
+- Hyper-link text color: #0584c3
+- Icon background-color: #34b4ff
