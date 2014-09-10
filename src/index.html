@@ -22,9 +22,9 @@
 		</div>
 	</div>
 	<div id="side-bar" class="animated">
-      <button id="home" onClick="code()">CODE</button>
-      <button id="league" onClick="league()">LEAGUE OF LEGENDS</button>
-	  <button id="Starcraft" onClick="starcraft()">Starcraft</button>
+      <button id="home" onClick="code()">Code</button>
+      <button id="league" onClick="league()">League of Legends</button>
+	  <button id="starcraft2" onClick="starcraft2()">StarCraft II</button>
 	  <div id="side-bar-info">
 	  <center><p id="time"></p></center>
 	  <center><p id="date"></p></center>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div id="class_sc2" height="33.33%">
-				<h1 id="class_sc2-heading">Starcraft</h1>
+				<h1 id="class_sc2-heading">StarCraft II</h1>
 				<div id="class_sc2-content">
 				</div>
 			</div>
@@ -68,6 +68,7 @@
 							<p id="URL">URL: https://www.Squrrrel.Github.io/Ethinix</p>
 						</div></center>
 				</div>	
+			</div>
 			</div>
 			<div id="page_league">
 				<div id="page_league-content" style="position: relative;">
@@ -214,13 +215,18 @@
 				</div>
 			</div>
 			<div id="page_sc2">
-				<div id="page_sc2-content" style="position: relative;" >
-					<h1 id="page_sc2-heading">Starcraft</h1>
-						<input type="button" id="Starcraft-back_to_home" value="HOME" />
+				<div id="page_sc2-content" style="position: relative;">
+					<center><div id="page_sc2-heading"><img src="images/headings/sc2-heading.png" /></div></center>
+					<input type="button" id="sc2-back_to_home" value="HOME" />
+					<div id="page_sc2-wcs-heading">
+						<p>World Championships</p>
+					</div>
+					<div id="page_sc2-what-race-are-you">
+						<p>What Race are you?</p>
+					</div>
 				</div>
 			</div>
-      </div>
-    </div>
+		</div>
 	<script>
 		$('#page_code').css('left', "-100%");
 		$('#page_league').css('left', "-100%");
@@ -275,7 +281,7 @@
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
-		$('#Starcraft-back_to_home').click(function() {
+		$('#sc2-back_to_home').click(function() {
 			$('#page_sc2').css('left', "-100%");
 			$('#menu-button-open').css('left', "0.6vh");
 			$('#menu-button-close').css('left', "0.6vh");
@@ -377,7 +383,7 @@
 	font-family: Roboto-Thin;
 	top: -10.7vh;
 	right: 0;
-	lefT: 90vh;
+	left: 90vh;
 	-webkit-transform: translateX(-90vh);
 	position: relative !important;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -386,17 +392,17 @@
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	}
-	 #page_sc2 input[type="button"] {
-			width: 15vh;
+	#page_sc2 input[type="button"]	{
+	width: 15vh;
 	height: 5vh;
 	border: hidden;
 	background-color: #009fee;
 	color: white;
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
-	top: -8.2vh;
+	top: -34.9vh;
 	right: 0;
-	lefT: 90vh;
+	left: 90vh;
 	-webkit-transform: translateX(-90vh);
 	position: relative !important;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -404,7 +410,7 @@
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
-	 }
+	}
 	 #page_code input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
@@ -545,6 +551,16 @@ img {
 	-webkit-transform: translateX(-50%);
 	font-size: 2.8em;
 	color: #ff9c00;
+}
+#page_sc2-heading img {
+		width: 800px;
+		height: 300px;
+		top: -6vh;
+		-webkit-transform: translateY(-6vh);
+		-moz-transform: translateY(-6vh);
+		-ms-transform: translateY(-6vh);
+		-o-transform: translateY(-6vh);
+		transform: translateY(-6vh);
 }
 </style>
 </html>

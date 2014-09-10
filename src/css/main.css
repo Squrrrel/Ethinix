@@ -20,7 +20,7 @@ body, html {
 	border-bottom: solid #009fee 1px;
 	font-size: 2vh !important;
 	font-family: Quicksand !important;
-	z-index: 999999999;
+	z-index: 999999;
 }
 #menu-button-open, #menu-button-close {
 	left: 0.6vh;
@@ -178,7 +178,7 @@ border: none !important;
 	top: 66.3% !important;
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
-	background-image: url('../images/banners/sc2-banner.jpg');
+	background-image: url('../images/banners/sc2-banner.jpeg');
 	background-size: 100% 200%;
 	background-position: center top;
 	transition: opacity 0.35s ease-in-out;
@@ -188,11 +188,11 @@ border: none !important;
 	z-index: 999;
 }
 #class_sc2-content:hover {
-	background-image: url('../images/banners/sc2-banner.jpg');
+	background-image: url('../images/banners/sc2-banner.jpeg');
 	opacity: 1;
 }
 #class_code, #class_league, #class_sc2 {
-	z-index: 99999;
+	z-index: 999999999;
 }
 #class_sc2-heading {
 	font-size: 4em;
@@ -255,7 +255,7 @@ border: none !important;
 #page_code, #page_league, #page_sc2 {
 	width: 100%;
 	left: -100%;
-	position: absolute;
+	position: absolute !important;
 	/** 
 	-webkit-transform: translate(-0%, -0em); 
 	**/
@@ -281,9 +281,8 @@ border: none !important;
 	opacity: 0;
 }
 #page_sc2 {
-	background: url('../images/backgrounds/sc2_background.jpg');
+	background: url('../images/backgrounds/sc2-background.png');
 	background-size: 100% 100%;
-	overflow: hidden;
 	height: 95vh;
 	z-index: -500;
 	opacity: 0;
@@ -384,7 +383,6 @@ input[type="image"] {
 	}
 	#page_sc2 {
 		height: 94.8vh;
-		z-index: -500;
 		opacity: 0;
 	}
 	#flash-background-league embed {
@@ -447,7 +445,7 @@ input[type="image"] {
 #page_sc2 {
 	background: #1d222c;
 	height: 94.6vh;
-	z-index: -500;
+	z-index: 999999999;
 	opacity: 0;
 }
 }
@@ -460,17 +458,4 @@ input[type="image"] {
 	}
 }
 
-	input[type="button"] {
-	width: 15vh;
-	height: 5vh;
-	border: hidden;
-	background-color: #009fee;
-	color: white;
-	font-size: 1.8em;
-	font-family: Roboto-Thin;
-	top: -12vh;
-	right: 0;
-	lefT: 90vh;
-	-webkit-transform: translateX(-90vh);
-	position: relative !important;
-	}
+
