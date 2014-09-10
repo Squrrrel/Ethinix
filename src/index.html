@@ -218,13 +218,46 @@
 				<div id="page_sc2-content" style="position: relative;">
 					<center><div id="page_sc2-heading"><img src="images/headings/sc2-heading.png" /></div></center>
 					<input type="button" id="sc2-back_to_home" value="HOME" />
-					<div id="page_sc2-wcs-heading">
-						<p>World Championships</p>
+					<div id="page_sc2-important-content">
+					<center><div id="page_sc2-content">
+						<div id="page_sc2-livestream">
+							<div id="page_sc2-livestream-heading">
+								<p>World Championship 2014</p>
+							</div>
+							<object type="application/x-shockwave-flash" height="378" width="620" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=wcs_america" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=wcs_america&auto_play=false&start_volume=25" /></object>
+						</div>
+						<div id="what-race-are-you-heading">
+							<p>What Race are you?</p>
+						</div>						
+						<div id="races">
+							<div id="pages_sc2-race-terran">
+								<div id="pages_sc2-race-terran-heading" width="100vh">
+									<p>Terran</p>
+								</div>
+								<div id="pages_sc2-race-terran-image">
+									<img src="images/logo/sc2-terran.png" />
+								</div>
+							</div>
+							<div id="pages_sc2-race-protoss">
+								<div id="pages_sc2-race-protoss-heading" width="100vh">
+									<p>Protoss</p>
+								</div>
+								<div id="pages_sc2-race-protoss-image">
+									<img src="images/logo/sc2-protoss.png" />
+								</div>
+							</div>
+							<div id="pages_sc2-race-zerg">
+								<div id="pages_sc2-race-zerg-heading" width="100h">
+									<p>Zerg</p>
+								</div>
+								<div id="pages_sc2-race-zerg-image">
+									<img src="images/logo/sc2-zerg.png" />
+								</div>
+							</div>
+						</div>
+					</div></center>
 					</div>
-					<div id="page_sc2-what-race-are-you">
-						<p>What Race are you?</p>
-					</div>
-				</div>
+			</div>
 			</div>
 		</div>
 	<script>
@@ -336,6 +369,16 @@
 		});
 		$('#URL').css('opacity', "0");
 		
+		$('#pages_sc2-race-terran').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/terran/');
+		});
+		$('#pages_sc2-race-protoss').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/protoss/');
+		});
+		$('#pages_sc2-race-zerg').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/zerg/');
+		});
+		
 		function direct(name) {
 			window.open("http://gameinfo.oce.leagueoflegends.com/en/game-info/champions/" + name);
 		}
@@ -347,6 +390,8 @@
 	-moz-transition: all 0.25s ease-in-out !important;
 	-o-transition: all 0.25s ease-in-out !important;
 	transition: all 0.25s ease-in-out !important;
+	margin: 0 !important;
+	padding: 0 !important;
   }
 	#menu-button-open, #menu-button-close {
 		background: url('icons/png/list26.png') no-repeat;
@@ -400,7 +445,7 @@
 	color: white;
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
-	top: -34.9vh;
+	top: -20.17vh;
 	right: 0;
 	left: 90vh;
 	-webkit-transform: translateX(-90vh);
@@ -410,6 +455,7 @@
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
+	z-index: 999999999 !important;
 	}
 	 #page_code input[type="button"]:hover {
 		background-color: #08f !important;
@@ -434,7 +480,6 @@
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
 	color: white;
-
 }
 #download-source-code:hover {
 	 height: 9.5vh !important;
@@ -553,14 +598,108 @@ img {
 	color: #ff9c00;
 }
 #page_sc2-heading img {
-		width: 800px;
-		height: 300px;
-		top: -6vh;
-		-webkit-transform: translateY(-6vh);
-		-moz-transform: translateY(-6vh);
-		-ms-transform: translateY(-6vh);
-		-o-transform: translateY(-6vh);
-		transform: translateY(-6vh);
+		width: 625px;
+		height: 150px;
+		top: -3vh;
+		-webkit-transform: translateY(-3vh);
+		-moz-transform: translateY(-3vh);
+		-ms-transform: translateY(-3vh);
+		-o-transform: translateY(-3vh);
+		transform: translateY(-3vh);
+		margin: 0;
+		padding: 0;
+}
+#page_sc2-livestream {
+	font-family: Quicksand;
+	font-size: 3em;
+	color: white;
+	top: -1vh;
+	-webkit-transform: translateY(-1vh);
+	-moz-transform: translateY(-1vh);
+	-ms-transform: transalateY(-1vh);
+	-o-transform: translateY(-1vh);
+	transform: translateY(-1vh);
+}
+#races {
+	background-color: rgba(38,38,38,0.5);
+	display: flex;
+	flex-direction: ltr;
+	flex-wrap: wrap;
+	height: 25vh;
+	position: absolute;
+	bottom: -51%;
+	left: 0%;
+	right: 0%;
+	height: 42%;
+}
+#races img {
+	width: 50%;
+	height: 50%;
+}
+#what-race-are-you-heading {
+	top: 100%;
+	position: absolute;
+	-webkit-transform: translateY(100%);
+	-moz-transform: transalateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	font-family: Quicksand;
+	font-size: 3.2em;
+	color: white;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: transalateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#races div {
+	width: 33.33%;
+	overflow: hidden;
+	position: inherit;
+}
+#pages_sc2-race-terran-heading, #pages_sc2-race-protoss-heading, #pages_sc2-race-zerg-heading {
+	left: 0;
+	right: 0;
+	width: 100% !important;
+	border-bottom: solid #0c76af 1px;
+	position: relative !important;
+	height: 50%;
+	font-family: Roboto-Thin;
+	font-size: 2.8em;
+	color: white;
+}
+#races div {
+	position: relative;
+}
+#pages_sc2-race-protoss, #pages_sc2-race-zerg, #pages_sc2-race-terran {
+	opacity: 0.3;
+}
+#pages_sc2-race-protoss:hover, #pages_sc2-race-zerg:hover, #pages_sc2-race-terran:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+#pages_sc2-race-terran img {
+	width: 250px;
+	height: 220px;
+	left: -20px !important;
+	top: 50% !important;
+	 bottom: 0;
+	-webkit-transform: translateY(-50%) !important;
+	-webkit-transform: translateX(-20px) !important;
+}
+#pages_sc2-race-protoss img {
+	width: 250px;
+	height: 220px;
+}
+#pages_sc2-race-zerg img {
+	width: 325px;
+	height: 285px;
+	left: -25% !important;
+	top: 5px !important;
+	-webkit-transform: translate(-5px) !important;
+	-webkit-transform: translateX(-25%) !important;
 }
 </style>
 </html>

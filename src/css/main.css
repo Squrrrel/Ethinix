@@ -6,8 +6,8 @@ body, html {
 	font-size: 10pt;
 }
 * {
-	padding: -0%;
-	margin: -0%;
+	padding: -0% !important;
+	margin: -0% !important;
 }
 *:focus {
 	outline: 0;
@@ -116,7 +116,7 @@ border: none !important;
 }
 #time, #date, #info {
 	position: relative;
-	top: 1em%;
+	top: 0em;
 	-webkit-transform: translateY(4.5em);
 	font-size: 1.5em;
 }
@@ -382,7 +382,8 @@ input[type="image"] {
 		opacity: 0;
 	}
 	#page_sc2 {
-		height: 94.8vh;
+		height: 95vh;
+		z-index: -500;
 		opacity: 0;
 	}
 	#flash-background-league embed {
@@ -430,7 +431,7 @@ input[type="image"] {
 	font-size: 1.3em;
 }
 #page_code {
-	background-color: ;
+	background-color: white;
 	height: 94.6vh;
 	z-index: -500;
 	opacity: 0;
@@ -443,9 +444,9 @@ input[type="image"] {
 	opacity: 0;
 }
 #page_sc2 {
-	background: #1d222c;
-	height: 94.6vh;
-	z-index: 999999999;
+	background-color: url('images/backgrounds/sc2-background.png');
+	height: 95vh;
+	z-index: -500;
 	opacity: 0;
 }
 }
