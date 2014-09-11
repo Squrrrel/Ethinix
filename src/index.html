@@ -294,6 +294,7 @@
 			</div>
 		</div>
 	<script>
+		alert('This website is best showed off in 1920x1080 and running on Google Chrome.');
 		$('#page_code').css('left', "-100%");
 		$('#page_league').css('left', "-100%");
 		$('#page_code').css('left', "-100%");
@@ -414,6 +415,51 @@
 		
 		function direct(name) {
 			window.open("http://gameinfo.oce.leagueoflegends.com/en/game-info/champions/" + name);
+		}
+		function code() {
+		$('#page_code').css('left', "0%");
+		$('#page_code').css('max-width', "100%");
+		$('#page_code').css('opacity', "1");
+		$('#page_code').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();		
+		}
+		function league() {
+		$('#page_league').css('left', "0%");
+		$('#page_league').css('max-width', "100%");
+		$('#page_league').css('opacity', "1");
+		$('#page_league').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
+		}
+		function starcraft2() {
+		$('#page_sc2').css('left', "0%");
+		$('#page_sc2').css('max-width', "100%");
+		$('#page_sc2').css('opacity', "1");
+		$('#page_sc2').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
 		}
 	</script>
   </body>

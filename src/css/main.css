@@ -156,7 +156,7 @@ border: none !important;
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
 	background-image: url('../images/banners/league-banner.jpg');
-	background-size: 100% 200%;
+	background-size: 100% 100%;
 	background-position: center;
 	transition: opacity 0.35s ease-in-out;
 	opacity: 0.2;
