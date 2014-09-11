@@ -48,10 +48,10 @@
 				</div>
 			</div>
 			<div id="page_code">
-					<center><h1 id="page_code-heading" style="color: #009fee; font-family: Roboto-thin; font-size: 3.2em">CODE</h1></center>
 						<input type="button" id="code-back_to_home" value="HOME" />
 							<div id="page_code-content" style="position: relative;">
-							
+						
+						<!--						
 						<center><p id="download-source-code-text">Want to download the code for this website?</p></center>
 						<center><div id="download-source-code">
 							<div id="dsc-p">
@@ -67,6 +67,39 @@
 							</div>
 							<p id="URL">URL: https://www.Squrrrel.Github.io/Ethinix</p>
 						</div></center>
+						-->
+						<div id="page_code-heading">
+							<p>Ethinix Source Code</p>
+						</div>
+						<div id="page_code-how-to-get-source-code-heading">
+							<p>To get the source code go onto <a href="http://windows.github.com/">Github For Windows</a> and download the appliaction. After it has downloaded and installed open 'Git Shell' and follow the steps below.</p>
+						</div>
+						<div id="page_code-steps">
+							<div id="page_code-code-text-step-1-heading">
+								<p>Step one: Clone the Repository.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>~ <font color="#FE2E2E">git</font> <font color="#F7FE2E">clone</font> <font color="#5882FA">https://www.github.com/Squrrrel/Ethinix/</font></p>
+							</div></center>
+							<div id="page_code-code-text-step-2-heading">
+								<p>Step two: Wait for Git Shell to clone the repository onto your local hard drive.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>Cloning into 'Ethinix'...</p>
+								<p>remote: Counting objects: 927, done.</p>
+								<p>remote: Compressing objects: 100% (792/792), done.</p>
+								<p>Receiving objects: [Percentage Done]% ([Files Cloned]/927), [Total Size]MiB | [Download Speed]KiB/s</p>
+								<p>Resolving deltas: 100% (145/145), done.</p>
+								<p>Checking connectivity... done.</p>
+							</div></center>
+							<div id="page_code-text-step-3-heading">
+								<p>Step three: Find the local directory of the repository.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>Default Directory for the folder is 'C:\Users\%USERNAME%\Documents\Github\Ethinix'.</p>
+								<p>If you saved it under a different name, then it is still located in Documents but in a different folder name.</p>
+							</div></center>
+						</div>	
 				</div>	
 			</div>
 			</div>
@@ -426,7 +459,7 @@
 	color: white;
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
-	top: -10.7vh;
+	top: -5vh;
 	right: 0;
 	left: 90vh;
 	-webkit-transform: translateX(-90vh);
@@ -700,6 +733,47 @@ img {
 	top: 5px !important;
 	-webkit-transform: translate(-5px) !important;
 	-webkit-transform: translateX(-25%) !important;
+}
+#page_code-heading {
+	text-align: center;
+	font-size: 3.2em;
+	color: white;
+	top: -15vh;
+	-webkit-transform: translateY(-15vh);
+	-moz-transform: translateY(-15vh);
+	-ms-transform: translateY(-15vh);
+	-o-transform: translateY(-15vh);
+	transform: translateY(-15vh);
+	border-bottom: solid white 1px;
+}
+#page_code {
+	background-color: #009fee;
+}
+#page_code-how-to-get-source-code-heading {
+	text-align: center;
+	font-size: 1.8em;
+	top: -10vh;
+	color: white;
+	-webkit-transform: translateY(-10vh);
+	-moz-transform: translateY(-10vh);
+	-ms-transform: translateY(-10vh);
+	-o-transform: translateY(-10vh);
+	transform: translateY(-10vh);
+}
+#page_code-code-text {
+	width: 58%;
+	height: 15%;
+	background-color: rgba(38,38,38,1);
+	color: white;
+	font-size: 1.6em;
+	text-align: left;
+}
+#page_code-code-text-step-1-heading, #page_code-code-text-step-2-heading, #page_code-text-step-3-heading {
+	text-align: center;
+	font-size: 1.8em;
+	color: white;
+	padding-top: 2.5vh !important;
+	padding-bottom: 1vh !important;
 }
 </style>
 </html>
