@@ -22,9 +22,9 @@
 		</div>
 	</div>
 	<div id="side-bar" class="animated">
-      <button id="home" onClick="code()">CODE</button>
-      <button id="league" onClick="league()">LEAGUE OF LEGENDS</button>
-	  <button id="music" onClick="spotify()">MUSIC</button>
+      <button id="home" onClick="code()">Code</button>
+      <button id="league" onClick="league()">League of Legends</button>
+	  <button id="starcraft2" onClick="starcraft2()">StarCraft II</button>
 	  <div id="side-bar-info">
 	  <center><p id="time"></p></center>
 	  <center><p id="date"></p></center>
@@ -42,16 +42,16 @@
 				<div id="class_league-content">
 				</div>
 			</div>
-			<div id="class_music" height="33.33%">
-				<h1 id="class_music-heading">Music</h1>
-				<div id="class_music-content">
+			<div id="class_sc2" height="33.33%">
+				<h1 id="class_sc2-heading">StarCraft II</h1>
+				<div id="class_sc2-content">
 				</div>
 			</div>
 			<div id="page_code">
-					<center><h1 id="page_code-heading" style="color: #009fee; font-family: Roboto-thin; font-size: 3.2em">CODE</h1></center>
 						<input type="button" id="code-back_to_home" value="HOME" />
 							<div id="page_code-content" style="position: relative;">
-							
+						
+						<!--						
 						<center><p id="download-source-code-text">Want to download the code for this website?</p></center>
 						<center><div id="download-source-code">
 							<div id="dsc-p">
@@ -67,7 +67,41 @@
 							</div>
 							<p id="URL">URL: https://www.Squrrrel.Github.io/Ethinix</p>
 						</div></center>
+						-->
+						<div id="page_code-heading">
+							<p>Ethinix Source Code</p>
+						</div>
+						<div id="page_code-how-to-get-source-code-heading">
+							<p>To get the source code go onto <a href="http://windows.github.com/">Github For Windows</a> and download the appliaction. After it has downloaded and installed open 'Git Shell' and follow the steps below.</p>
+						</div>
+						<div id="page_code-steps">
+							<div id="page_code-code-text-step-1-heading">
+								<p>Step one: Clone the Repository.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>~ <font color="#FE2E2E">git</font> <font color="#F7FE2E">clone</font> <font color="#5882FA">https://www.github.com/Squrrrel/Ethinix/</font></p>
+							</div></center>
+							<div id="page_code-code-text-step-2-heading">
+								<p>Step two: Wait for Git Shell to clone the repository onto your local hard drive.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>Cloning into 'Ethinix'...</p>
+								<p>remote: Counting objects: 927, done.</p>
+								<p>remote: Compressing objects: 100% (792/792), done.</p>
+								<p>Receiving objects: [Percentage Done]% ([Files Cloned]/927), [Total Size]MiB | [Download Speed]KiB/s</p>
+								<p>Resolving deltas: 100% (145/145), done.</p>
+								<p>Checking connectivity... done.</p>
+							</div></center>
+							<div id="page_code-text-step-3-heading">
+								<p>Step three: Find the local directory of the repository.</p>
+							</div>
+							<center><div id="page_code-code-text">
+								<p>Default Directory for the folder is 'C:\Users\%USERNAME%\Documents\Github\Ethinix'.</p>
+								<p>If you saved it under a different name, then it is still located in Documents but in a different folder name.</p>
+							</div></center>
+						</div>	
 				</div>	
+			</div>
 			</div>
 			<div id="page_league">
 				<div id="page_league-content" style="position: relative;">
@@ -213,15 +247,54 @@
 					</div>
 				</div>
 			</div>
-			<div id="page_music">
-				<div id="page_music-content" style="position: relative;" >
-					<h1 id="page_music-heading">MUSIC</h1>
-						<input type="button" id="music-back_to_home" value="HOME" />
-				</div>
+			<div id="page_sc2">
+				<div id="page_sc2-content" style="position: relative;">
+					<center><div id="page_sc2-heading"><img src="images/headings/sc2-heading.png" /></div></center>
+					<input type="button" id="sc2-back_to_home" value="HOME" />
+					<div id="page_sc2-important-content">
+					<center><div id="page_sc2-content">
+						<div id="page_sc2-livestream">
+							<div id="page_sc2-livestream-heading">
+								<p>World Championship 2014</p>
+							</div>
+							<object type="application/x-shockwave-flash" height="378" width="620" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=wcs_america" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=wcs_america&auto_play=false&start_volume=25" /></object>
+						</div>
+						<div id="what-race-are-you-heading">
+							<p>What Race are you?</p>
+						</div>						
+						<div id="races">
+							<div id="pages_sc2-race-terran">
+								<div id="pages_sc2-race-terran-heading" width="100vh">
+									<p>Terran</p>
+								</div>
+								<div id="pages_sc2-race-terran-image">
+									<img src="images/logo/sc2-terran.png" />
+								</div>
+							</div>
+							<div id="pages_sc2-race-protoss">
+								<div id="pages_sc2-race-protoss-heading" width="100vh">
+									<p>Protoss</p>
+								</div>
+								<div id="pages_sc2-race-protoss-image">
+									<img src="images/logo/sc2-protoss.png" />
+								</div>
+							</div>
+							<div id="pages_sc2-race-zerg">
+								<div id="pages_sc2-race-zerg-heading" width="100h">
+									<p>Zerg</p>
+								</div>
+								<div id="pages_sc2-race-zerg-image">
+									<img src="images/logo/sc2-zerg.png" />
+								</div>
+							</div>
+						</div>
+					</div></center>
+					</div>
 			</div>
-      </div>
-    </div>
+			</div>
+		</div>
 	<script>
+		alert('This website is best showed off in 1920x1080 and running on Google Chrome.');
 		$('#page_code').css('left', "-100%");
 		$('#page_league').css('left', "-100%");
 		$('#page_code').css('left', "-100%");
@@ -242,14 +315,14 @@
 		$('#menu-button-open').show();
 		$('#menu-button-close').hide();
 		});
-		$('#class_music').click(function() {
-		$('#page_music').css('left', "0%");
-		$('#page_music').css('max-width', "100%");
-		$('#page_music').css('opacity', "1");
-		$('#page_music').css('z-index', "9999");
+		$('#class_sc2').click(function() {
+		$('#page_sc2').css('left', "0%");
+		$('#page_sc2').css('max-width', "100%");
+		$('#page_sc2').css('opacity', "1");
+		$('#page_sc2').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
@@ -260,7 +333,7 @@
 		$('#page_code').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
@@ -271,12 +344,12 @@
 		$('#page_league').css('z-index', "9999");
 		$('#menu-button-open').css('left', "15.6vh");
 		$('#menu-button-close').css('left', "15.6vh");
-		$('#class_music').css('left', "-100em");
+		$('#class_sc2').css('left', "-100em");
 		$('#class_league').css('right', "-100em");
 		$('#class_code').css('right', "-100em");
 		});
-		$('#music-back_to_home').click(function() {
-			$('#page_music').css('left', "-100%");
+		$('#sc2-back_to_home').click(function() {
+			$('#page_sc2').css('left', "-100%");
 			$('#menu-button-open').css('left', "0.6vh");
 			$('#menu-button-close').css('left', "0.6vh");
 		});
@@ -330,8 +403,63 @@
 		});
 		$('#URL').css('opacity', "0");
 		
+		$('#pages_sc2-race-terran').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/terran/');
+		});
+		$('#pages_sc2-race-protoss').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/protoss/');
+		});
+		$('#pages_sc2-race-zerg').click(function() {
+			window.open('http://us.battle.net/sc2/en/game/race/zerg/');
+		});
+		
 		function direct(name) {
 			window.open("http://gameinfo.oce.leagueoflegends.com/en/game-info/champions/" + name);
+		}
+		function code() {
+		$('#page_code').css('left', "0%");
+		$('#page_code').css('max-width', "100%");
+		$('#page_code').css('opacity', "1");
+		$('#page_code').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();		
+		}
+		function league() {
+		$('#page_league').css('left', "0%");
+		$('#page_league').css('max-width', "100%");
+		$('#page_league').css('opacity', "1");
+		$('#page_league').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
+		}
+		function starcraft2() {
+		$('#page_sc2').css('left', "0%");
+		$('#page_sc2').css('max-width', "100%");
+		$('#page_sc2').css('opacity', "1");
+		$('#page_sc2').css('z-index', "9999");
+		$('#menu-button-open').css('left', "15.6vh");
+		$('#menu-button-close').css('left', "15.6vh");
+		$('#class_sc2').css('left', "-100em");
+		$('#class_league').css('right', "-100em");
+		$('#class_code').css('right', "-100em");
+		$('#side-bar').css('webkitTransform', "translate(-0%, -0em)");
+		$('#side-bar').css('left', "-18.7em");
+		$('#menu-button-open').show();
+		$('#menu-button-close').hide();
 		}
 	</script>
   </body>
@@ -341,6 +469,8 @@
 	-moz-transition: all 0.25s ease-in-out !important;
 	-o-transition: all 0.25s ease-in-out !important;
 	transition: all 0.25s ease-in-out !important;
+	margin: 0 !important;
+	padding: 0 !important;
   }
 	#menu-button-open, #menu-button-close {
 		background: url('icons/png/list26.png') no-repeat;
@@ -375,9 +505,9 @@
 	color: white;
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
-	top: -10.7vh;
+	top: -5vh;
 	right: 0;
-	lefT: 90vh;
+	left: 90vh;
 	-webkit-transform: translateX(-90vh);
 	position: relative !important;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -386,17 +516,17 @@
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	}
-	 #page_music input[type="button"] {
-			width: 15vh;
+	#page_sc2 input[type="button"]	{
+	width: 15vh;
 	height: 5vh;
 	border: hidden;
 	background-color: #009fee;
 	color: white;
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
-	top: -8.2vh;
+	top: -20.17vh;
 	right: 0;
-	lefT: 90vh;
+	left: 90vh;
 	-webkit-transform: translateX(-90vh);
 	position: relative !important;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -404,14 +534,15 @@
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
-	 }
+	z-index: 999999999 !important;
+	}
 	 #page_code input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
 	 #page_league input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
-	 #page_music input[type="button"]:hover {
+	 #page_sc2 input[type="button"]:hover {
 		background-color: #08f !important;
 	 }
 #download-source-code {
@@ -428,7 +559,6 @@
 	font-size: 1.8em;
 	font-family: Roboto-Thin;
 	color: white;
-
 }
 #download-source-code:hover {
 	 height: 9.5vh !important;
@@ -545,6 +675,151 @@ img {
 	-webkit-transform: translateX(-50%);
 	font-size: 2.8em;
 	color: #ff9c00;
+}
+#page_sc2-heading img {
+		width: 625px;
+		height: 150px;
+		top: -3vh;
+		-webkit-transform: translateY(-3vh);
+		-moz-transform: translateY(-3vh);
+		-ms-transform: translateY(-3vh);
+		-o-transform: translateY(-3vh);
+		transform: translateY(-3vh);
+		margin: 0;
+		padding: 0;
+}
+#page_sc2-livestream {
+	font-family: Quicksand;
+	font-size: 3em;
+	color: white;
+	top: -1vh;
+	-webkit-transform: translateY(-1vh);
+	-moz-transform: translateY(-1vh);
+	-ms-transform: transalateY(-1vh);
+	-o-transform: translateY(-1vh);
+	transform: translateY(-1vh);
+}
+#races {
+	background-color: rgba(38,38,38,0.5);
+	display: flex;
+	flex-direction: ltr;
+	flex-wrap: wrap;
+	height: 25vh;
+	position: absolute;
+	bottom: -51%;
+	left: 0%;
+	right: 0%;
+	height: 42%;
+}
+#races img {
+	width: 50%;
+	height: 50%;
+}
+#what-race-are-you-heading {
+	top: 100%;
+	position: absolute;
+	-webkit-transform: translateY(100%);
+	-moz-transform: transalateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	font-family: Quicksand;
+	font-size: 3.2em;
+	color: white;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: transalateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#races div {
+	width: 33.33%;
+	overflow: hidden;
+	position: inherit;
+}
+#pages_sc2-race-terran-heading, #pages_sc2-race-protoss-heading, #pages_sc2-race-zerg-heading {
+	left: 0;
+	right: 0;
+	width: 100% !important;
+	border-bottom: solid #0c76af 1px;
+	position: relative !important;
+	height: 50%;
+	font-family: Roboto-Thin;
+	font-size: 2.8em;
+	color: white;
+}
+#races div {
+	position: relative;
+}
+#pages_sc2-race-protoss, #pages_sc2-race-zerg, #pages_sc2-race-terran {
+	opacity: 0.3;
+}
+#pages_sc2-race-protoss:hover, #pages_sc2-race-zerg:hover, #pages_sc2-race-terran:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+#pages_sc2-race-terran img {
+	width: 250px;
+	height: 220px;
+	left: -20px !important;
+	top: 50% !important;
+	 bottom: 0;
+	-webkit-transform: translateY(-50%) !important;
+	-webkit-transform: translateX(-20px) !important;
+}
+#pages_sc2-race-protoss img {
+	width: 250px;
+	height: 220px;
+}
+#pages_sc2-race-zerg img {
+	width: 325px;
+	height: 285px;
+	left: -25% !important;
+	top: 5px !important;
+	-webkit-transform: translate(-5px) !important;
+	-webkit-transform: translateX(-25%) !important;
+}
+#page_code-heading {
+	text-align: center;
+	font-size: 3.2em;
+	color: white;
+	top: -15vh;
+	-webkit-transform: translateY(-15vh);
+	-moz-transform: translateY(-15vh);
+	-ms-transform: translateY(-15vh);
+	-o-transform: translateY(-15vh);
+	transform: translateY(-15vh);
+	border-bottom: solid white 1px;
+}
+#page_code {
+	background-color: #009fee;
+}
+#page_code-how-to-get-source-code-heading {
+	text-align: center;
+	font-size: 1.8em;
+	top: -10vh;
+	color: white;
+	-webkit-transform: translateY(-10vh);
+	-moz-transform: translateY(-10vh);
+	-ms-transform: translateY(-10vh);
+	-o-transform: translateY(-10vh);
+	transform: translateY(-10vh);
+}
+#page_code-code-text {
+	width: 58%;
+	height: 15%;
+	background-color: rgba(38,38,38,1);
+	color: white;
+	font-size: 1.6em;
+	text-align: left;
+}
+#page_code-code-text-step-1-heading, #page_code-code-text-step-2-heading, #page_code-text-step-3-heading {
+	text-align: center;
+	font-size: 1.8em;
+	color: white;
+	padding-top: 2.5vh !important;
+	padding-bottom: 1vh !important;
 }
 </style>
 </html>
