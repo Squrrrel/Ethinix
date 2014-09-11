@@ -6,8 +6,8 @@ body, html {
 	font-size: 10pt;
 }
 * {
-	padding: -0%;
-	margin: -0%;
+	padding: -0% !important;
+	margin: -0% !important;
 }
 *:focus {
 	outline: 0;
@@ -20,7 +20,7 @@ body, html {
 	border-bottom: solid #009fee 1px;
 	font-size: 2vh !important;
 	font-family: Quicksand !important;
-	z-index: 999999999;
+	z-index: 999999;
 }
 #menu-button-open, #menu-button-close {
 	left: 0.6vh;
@@ -108,7 +108,7 @@ border: none !important;
 	display: block;
 	vertical-align: middle;
 }
-#home, #league, #music {
+#home, #league, #sc2 {
 	top: 2.3em;
 	top: 0.5em;
 	position: relative;
@@ -116,7 +116,7 @@ border: none !important;
 }
 #time, #date, #info {
 	position: relative;
-	top: 1em%;
+	top: 0em;
 	-webkit-transform: translateY(4.5em);
 	font-size: 1.5em;
 }
@@ -167,7 +167,7 @@ border: none !important;
 	background-image: url('../images/banners/league-banner.jpg');
 	opacity: 1;
 }
-#class_music-content {
+#class_sc2-content {
 	color: white;
 	font-family: Roboto;
 	height: 33.7% !important;
@@ -178,23 +178,23 @@ border: none !important;
 	top: 66.3% !important;
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
-	background-image: url('../images/banners/music-banner.jpg');
-	background-size: 100% 100%;
-	background-position: right bottom;
+	background-image: url('../images/banners/sc2-banner.jpeg');
+	background-size: 100% 200%;
+	background-position: center top;
 	transition: opacity 0.35s ease-in-out;
 	opacity: 0.2;
 	font-size: 4em;
 	bottom: 0;
 	z-index: 999;
 }
-#class_music-content:hover {
-	background-image: url('../images/banners/music-banner.jpg');
+#class_sc2-content:hover {
+	background-image: url('../images/banners/sc2-banner.jpeg');
 	opacity: 1;
 }
-#class_code, #class_league, #class_music {
-	z-index: 99999;
+#class_code, #class_league, #class_sc2 {
+	z-index: 999999999;
 }
-#class_music-heading {
+#class_sc2-heading {
 	font-size: 4em;
 	font-family: Roboto-Thin;
 	z-index: 1;
@@ -205,7 +205,7 @@ border: none !important;
 	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
-	color: #a6e233;
+	color: #fff;
 	opacity: 1;
 	vertical-align: middle !important;
 }
@@ -241,7 +241,7 @@ border: none !important;
 	vertical-align: middle !important;
 	z-index: 2;
 }
-#class_music-header {
+#class_sc2-header {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -249,13 +249,13 @@ border: none !important;
 	z-index: 1;
 	font-family: Roboto;
 }
-#class_music:hover, #class_league:hover, #class_code:hover {
+#class_sc2:hover, #class_league:hover, #class_code:hover {
 	cursor: pointer;
 }
-#page_code, #page_league, #page_music {
+#page_code, #page_league, #page_sc2 {
 	width: 100%;
 	left: -100%;
-	position: absolute;
+	position: absolute !important;
 	/** 
 	-webkit-transform: translate(-0%, -0em); 
 	**/
@@ -280,8 +280,9 @@ border: none !important;
 	z-index: -500;
 	opacity: 0;
 }
-#page_music {
-	background: white;
+#page_sc2 {
+	background: url('../images/backgrounds/sc2-background.png');
+	background-size: 100% 100%;
 	height: 95vh;
 	z-index: -500;
 	opacity: 0;
@@ -380,8 +381,8 @@ input[type="image"] {
 		z-index: -500;
 		opacity: 0;
 	}
-	#page_music {
-		height: 94.8vh;
+	#page_sc2 {
+		height: 95vh;
 		z-index: -500;
 		opacity: 0;
 	}
@@ -430,7 +431,7 @@ input[type="image"] {
 	font-size: 1.3em;
 }
 #page_code {
-	background-color: ;
+	background-color: white;
 	height: 94.6vh;
 	z-index: -500;
 	opacity: 0;
@@ -442,9 +443,9 @@ input[type="image"] {
 	z-index: -500;
 	opacity: 0;
 }
-#page_music {
-	background: white;
-	height: 94.6vh;
+#page_sc2 {
+	background-color: url('images/backgrounds/sc2-background.png');
+	height: 95vh;
 	z-index: -500;
 	opacity: 0;
 }
@@ -458,17 +459,4 @@ input[type="image"] {
 	}
 }
 
-	input[type="button"] {
-	width: 15vh;
-	height: 5vh;
-	border: hidden;
-	background-color: #009fee;
-	color: white;
-	font-size: 1.8em;
-	font-family: Roboto-Thin;
-	top: -12vh;
-	right: 0;
-	lefT: 90vh;
-	-webkit-transform: translateX(-90vh);
-	position: relative !important;
-	}
+
